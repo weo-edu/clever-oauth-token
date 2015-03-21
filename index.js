@@ -7,7 +7,7 @@ function base64(str) {
 
 module.exports = function(clientId, clientSecret, alternateUrl) {
   var baseUrl = 'https://clever.com/oauth/tokens';
-  var authString = base64(clientId + ':' + clientSecret);
+  var authString = 'Bearer ' + base64(clientId + ':' + clientSecret);
 
   // Allow alternate base urls to facilitate
   // mock oauth endpoints
@@ -21,6 +21,7 @@ module.exports = function(clientId, clientSecret, alternateUrl) {
 
     var url = baseUrl + '?' + qs.stringify(params);
     request(url)
+      .set('Authorization', authString)
       .end(function(err, res) {
         if(err) return cb(err);
         if(res.status !== 200)
