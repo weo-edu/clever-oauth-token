@@ -15,3 +15,14 @@ cleverToken({
 
 });
 ```
+
+### Mock Endpoints
+
+```javascript
+var cleverToken = require('clever-oauth-token')(
+  cleverClientId,
+  cleverClientSecret,
+  'http://mock-oauth-endpoint/oauth/tokens'
+);
+```
+
