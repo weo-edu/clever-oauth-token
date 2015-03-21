@@ -1,0 +1,28 @@
+{
+  "name": "clever-oauth-token",
+  "version": "0.1.0",
+  "description": "Retrieve an OAuth token from Clever (http://www.clever.com)",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weo-edu/clever-oauth-token"
+  },
+  "keywords": [
+    "clever",
+    "oauth",
+    "token"
+  ],
+  "author": "ashaffer (http://github.com/ashaffer)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/weo-edu/clever-oauth-token/issues"
+  },
+  "homepage": "https://github.com/weo-edu/clever-oauth-token",
+  "dependencies": {
+    "qs": "^2.4.1",
+    "superagent": "^1.1.0"
+  }
+}
