@@ -14,7 +14,7 @@ module.exports = function(clientId, clientSecret, alternateUrl) {
   if(arguments.length === 3)
     baseUrl = alternateUrl;
 
-  return function(params) {
+  return function(params, cb) {
     // This is the only supported grant_type at the moment, so let's
     // not make people specify it if they don't want to
     params.grant_type = params.grant_type || 'authorization_code';
