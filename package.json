@@ -1,6 +1,6 @@
 {
   "name": "clever-oauth-token",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Retrieve an OAuth token from Clever (http://www.clever.com)",
   "main": "index.js",
   "scripts": {
