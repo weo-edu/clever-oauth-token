@@ -30,7 +30,7 @@ module.exports = function(clientId, clientSecret, alternateUrl) {
         if(err) return cb(err);
         if(res.status !== 200)
           cb(new Error(res.body));
-        cb(null, res.body.access_token);
+        cb(null, res.body.data[0].access_token);
       });
   };
 };
